@@ -1,0 +1,126 @@
+<html lang="zh-cmn-Hans"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>我的家人</title>
+    <link rel="stylesheet" href="./style/weui.css">
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/myFamily.js"></script>
+</head>
+<body ontouchstart="">
+    <div class="weui-toptips weui-toptips_warn js_tooltips">错误提示</div>
+
+    <div class="container" id="container"><div class="page input js_show">
+    <div class="page__hd">
+        <img src="./img/pic_choice@2x.png" style="width:100%;">
+    </div>
+    <div class="page__bd">
+        <div class="weui-cells weui-cells_radio">
+            <label class="weui-cell weui-check__label" for="x11">
+                <div class="weui-cell__hd"><input type="radio" name="family" id='family0'><label for='family0'></label></div>
+                <div class="weui-cell__bd">
+                    <p><span>周杰</span><img src="./img/regsiter_icon_sex_man@2x.png" style="width: 16px;margin-right: 14px;margin-left: 4px;"><span>28岁</span></p>
+                </div>
+                <div class="weui-cell__ft">
+                    (孩子)
+                    
+                </div>
+            </label>
+            <label class="weui-cell weui-check__label" for="x12">
+                <div class="weui-cell__hd"><input type="radio" name="family" id='family1'><label for='family1'></label></div>
+
+                <div class="weui-cell__bd">
+                    <p><span>王可可</span><img src="./img/regsiter_icon_sex_woman@2x.png"  style="width: 16px;margin-right: 14px;margin-left: 4px;"><span>4岁</span></p>
+                </div>
+                <div class="weui-cell__ft">
+                    (亲友)
+                </div>
+            </label>
+
+            <label class="weui-cell weui-check__label" for="x12">
+                <div class="weui-cell__hd"><input type="radio" name="family" id='family2'><label for='family2'></label></div>
+
+                <div class="weui-cell__bd">
+                    <p>王芳<img src="./img/regsiter_icon_sex_woman@2x.png"  style="width: 16px;margin-right: 14px;margin-left: 4px;"><span>52岁</span></p>
+                </div>
+                <div class="weui-cell__ft">
+                    (父母)
+                </div>
+            </label>
+            
+        </div>
+  
+    <div class="weui-cells__tips" style="text-align: right;">以上是您在好德医添加的家属</div>
+<div class="weui-cells " style="text-align: center;">
+    <a href="javascript:void(0);" class="weui-cell weui-cell_link">
+                <div class="weui-cell__bd" style="color:#0066ff;font-size: 15px;" onclick="location.href='./newFamily.html'">新增家属</div>
+            </a>
+        </div>
+    <div class="weui-btn-area">
+            <a class="weui-btn" href="javascript:" id="showTooltips">提交</a>
+        </div>
+  
+</div>
+
+
+</body></html>
+<style type="text/css">
+
+.weui-cell__ft{
+    color:#333;
+}
+input[type="radio"] + label::before {
+    content: "\a0"; /*不换行空格*/
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 10px;
+    width: 1em!important;
+    height: 1em!important;
+    margin-right: .4em;
+    border-radius: 50%;
+    text-indent: .15em;
+    line-height: 1; 
+    background-image: url(./img/radio.png);
+        background-size: 100% 100%;
+
+}
+
+input[type="radio"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+input[type="radio"]:checked + label::before {
+    background-image: url(./img/radioSelected.png);
+    background-clip: content-box;
+}
+    .weui-label{
+            width: 57.5px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: #333;
+    }
+.weui-input{
+    font-size: 15px;color:#333;
+
+}
+body{
+background: #f9f9f9;
+}
+
+
+.weui-cells {
+    margin-top: 1.17647059em;
+    background-color: #FFFFFF;}
+
+.weui-btn-area{
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.weui-btn-area a{
+    background: #0066ff;
+}
+</style>

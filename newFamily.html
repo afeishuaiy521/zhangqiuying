@@ -1,0 +1,165 @@
+<html lang="zh-cmn-Hans"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>新增家属</title>
+    <link rel="stylesheet" href="./style/weui.css">
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/newFamily.js"></script>
+</head>
+<body ontouchstart="">
+    <div class="weui-toptips toptips_warn js_tooltips">错误提示</div>
+
+    <div class="container" id="container"><div class="page input js_show">
+    <div class="page__hd">
+        <img src="./img/pic_information@2x.png" style="width:100%;">
+    </div>
+    <div class="page__bd">
+                <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">家人姓名</label><span class='requireIcon'>*</span></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" id='familyName' placeholder="请输入家人姓名">
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">身份证号</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="tel" placeholder="请输入家人的身份证号">
+                </div>
+               
+            </div>
+            <div class="weui-cell weui-cell_select">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">家人关系</label><span class='requireIcon'>*</span>
+                </div>
+                <div class="weui-cell__bd">
+                    <select class="weui-select" name="select1" id='relation'>
+                        <option selected="" value="">请选择</option>
+
+                        <option value="1">本人</option>
+                        <option value="2">爱人</option>
+                        <option value="3">父母</option>
+                        <option value="3">子女</option>
+                        <option value="3">亲友</option>
+                    </select>
+                </div>
+            </div>
+            <div class="weui-cell weui-cell_select">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">家人性别</label><span class='requireIcon'>*</span>
+                </div>
+                <div class="weui-cell__bd">
+                    <select class="weui-select" name="select1" id='familySex'>
+                        <option selected="" value="">请选择</option>
+                        <option value="0">女</option>
+
+                        <option value="1">男</option>
+                    </select>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label for="" class="weui-label">出生日期</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="date" value="">
+                </div>
+            </div>
+
+
+        
+
+        
+    </div>
+  
+    <div class="weui-cells__tips" style="text-align: right;position: relative;"><span style='color:red;top:3px;left:-3px;position: relative;'>*</span>为必填选项</div>
+
+    <div class="weui-btn-area">
+            <a class="weui-btn" href="javascript:" id="showTooltips" >提交</a>
+        </div>
+  
+</div>
+
+
+</body></html>
+<style type="text/css">
+
+.toptips_warn {
+
+    position: fixed;
+    top: 40%;
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    background: #313131;
+}
+.weui-cell__hd{
+    position: relative;
+}
+.requireIcon{
+    color: red;
+    position: absolute;
+    top: 3px;
+    right: 10px;
+}
+.weui-cell_select{
+
+    padding-left: 15px;
+}
+.weui-cell__ft{
+    color:#333;
+}
+input[type="radio"] + label::before {
+    content: "\a0"; /*不换行空格*/
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 10px;
+    width: 1em!important;
+    height: 1em!important;
+    margin-right: .4em;
+    border-radius: 50%;
+    border: 1px solid #0066ff;
+    text-indent: .15em;
+    line-height: 1; 
+}
+
+input[type="radio"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+input[type="radio"]:checked + label::before {
+    background-color: #0066ff;
+    background-clip: content-box;
+}
+    .weui-label{
+            width:60.5px;
+    margin-right: 20px;
+    text-align: left;
+    font-size: 15px;
+    color: #333;
+    }
+.weui-input{
+    font-size: 15px;color:#333;
+
+}
+body{
+background: #f9f9f9;
+}
+
+
+.weui-cells {
+    margin-top: 1.17647059em;
+    background-color: #FFFFFF;}
+
+.weui-btn-area{
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.weui-btn-area a{
+    background: #0066ff;
+}
+</style>

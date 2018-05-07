@@ -1,0 +1,172 @@
+<html lang="zh-cmn-Hans"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>医生列表</title>
+    <link rel="stylesheet" href="./style/weui.css">
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/doctorList.js"></script>
+</head>
+<body ontouchstart="">
+    <div class="weui-toptips toptips_warn js_tooltips">错误提示</div>
+
+    <div class="container" id="container"><div class="page input js_show">
+    <div class="page__hd">
+    </div>
+    <div class="page__bd">
+               
+            <div class="weui-cells">
+                <div class="weui-cell">
+                    <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+                        <img src="./img/doc_img_list_information@2x.png" style="width: 32px;display: block">
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p class="docName">王多多<span class="hospital">武汉大学中南医院</span> </p>
+                        <p class="jobTitle">妇科一/主治医师</p>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <a class="weui-btn consult" href="javascript:"  onclick="location.href='./consultDoc.html'">咨询医生</a>
+
+                    </div>
+                </div>
+                <div class="weui-cell weui-cell_access">
+                    <div class="weui-cell__bd">
+                        <p class="goodDes">擅长：宫颈疾病、不孕不育、月经不调、乳腺疾病、计划生育痛经以及疑难杂症的治疗。</p>                    
+                    </div>
+                </div>
+            </div>
+
+            <div class="weui-cells">
+                <div class="weui-cell">
+                    <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+                        <img src="./img/doc_img_list_information@2x.png" style="width: 32px;display: block">
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p class="docName">周杰伦<span class="hospital">武汉大学中南医院</span> </p>
+                        <p class="jobTitle">心内科/主治医师</p>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <a class="weui-btn consult" href="javascript:"  >咨询医生</a>
+
+                    </div>
+                </div>
+                <div class="weui-cell weui-cell_access">
+                    <div class="weui-cell__bd">
+                        <p class="goodDes">擅长：对消化系统特别是肝胆疾病，慢性病毒性肝炎、非酒精性脂肪性肝病，和肝纤维等方面的整治都有较多研究。</p>                    
+                    </div>
+                </div>
+            </div>
+
+   </div>
+  
+</div>
+<script type="text/javascript">
+
+</script>
+
+</body></html>
+<style type="text/css">
+.hospital{
+    color: #333;font-size: 12px;margin-left: 6px;
+}
+.docName{
+   font-size: 18px;color:#333; 
+}
+.jobTitle{
+font-size: 12px;color: #888888;
+}
+.goodDes{
+font-size: 12px;
+color:#333;
+line-height: 19px;
+}
+.consult{
+    background: #0066ff!important;
+    width: 80px;
+    height: 26px;line-height: 26px;
+    border-radius:13px;
+    font-size: 12px;
+
+}
+.toptips_warn {
+
+    position: fixed;
+    top: 40%;
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    background: #313131;
+}
+
+.weui-cells{
+    margin:10px;border-radius: 5px;
+}
+.weui-cell__hd{
+    position: relative;
+}
+.requireIcon{
+    color: red;
+    position: absolute;
+    top: 3px;
+    right: 10px;
+}
+.weui-cell_select{
+
+    padding-left: 15px;
+}
+.weui-cell__ft{
+    color:#333;
+}
+input[type="radio"] + label::before {
+    content: "\a0"; /*不换行空格*/
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 10px;
+    width: 1em!important;
+    height: 1em!important;
+    margin-right: .4em;
+    border-radius: 50%;
+    border: 1px solid #0066ff;
+    text-indent: .15em;
+    line-height: 1; 
+}
+
+input[type="radio"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+input[type="radio"]:checked + label::before {
+    background-color: #0066ff;
+    background-clip: content-box;
+}
+    .weui-label{
+            width:60.5px;
+    margin-right: 20px;
+    text-align: left;
+    font-size: 15px;
+    color: #333;
+    }
+.weui-input{
+    font-size: 15px;color:#333;
+
+}
+body{
+background: #f9f9f9;
+}
+
+
+.weui-cells {
+    margin-top: 1.17647059em;
+    background-color: #FFFFFF;}
+
+.weui-btn-area{
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.weui-btn-area a{
+    background: #0066ff;
+}
+</style>
